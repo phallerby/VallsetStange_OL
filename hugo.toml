@@ -1,0 +1,4 @@
+baseURL = 'https://phallerby.github.io/VallsetStange_OL/'
+languageCode = 'nb-no'
+title = 'VallsetStange_OL'
+theme = 'ananke'
