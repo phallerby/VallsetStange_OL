@@ -1,4 +1,18 @@
 baseURL = 'https://phallerby.github.io/VallsetStange_OL/'
 languageCode = 'nb-no'
-title = 'VallsetStange_OL'
+title = 'Orienteringslaget Vallset/Stange'
 theme = 'ananke'
+
+[params]
+  description = 'Orienteringslaget Vallset/Stange er en lokal orienteringsklubb i Stange.'
+  site_logo = 'images/logo.png'
+  custom_css = ['custom.css']
+
+[params.ananke]
+  show_recent_posts = false
+
+[params.ananke.social]
+  [params.ananke.social.follow]
+    networks = ['facebook']
+  [params.ananke.social.facebook]
+    profilelink = 'https://www.facebook.com/groups/585257878237772/'

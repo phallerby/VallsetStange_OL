@@ -1,0 +1,242 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap');
+
+:root {
+  --brand-blue: #2a7fb8;
+  --brand-blue-dark: #1d5f8a;
+  --text-dark: #1d2430;
+  --text-muted: #5c6b7a;
+  --bg-light: #f5f7fb;
+  --card-bg: #ffffff;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Outfit", sans-serif;
+  background-color: var(--bg-light);
+  color: var(--text-dark);
+}
+
+body > header,
+body > footer {
+  display: none;
+}
+
+.vso-nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: transparent;
+  transition: background 0.3s ease, box-shadow 0.3s ease;
+  z-index: 100;
+}
+
+.vso-nav.scrolled {
+  background: #fff;
+  box-shadow: 0 10px 30px rgba(15, 23, 42, 0.08);
+}
+
+.vso-nav-inner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+  padding: 1rem 1.5rem;
+}
+
+.vso-nav-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  font-weight: 500;
+  justify-content: center;
+}
+
+.vso-nav-links a {
+  text-decoration: none;
+  color: #fff;
+  transition: color 0.3s ease;
+}
+
+.vso-nav.scrolled .vso-nav-links a {
+  color: var(--text-dark);
+}
+
+.vso-hero {
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  padding: 8rem 1.5rem 6rem;
+}
+
+.vso-hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(11, 25, 38, 0.55), rgba(11, 25, 38, 0.75));
+}
+
+.vso-hero-content {
+  position: relative;
+  z-index: 1;
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.vso-hero-logo {
+  width: 120px;
+  margin: 0 auto 1.5rem;
+}
+
+.vso-hero h1 {
+  font-size: clamp(2.6rem, 5vw, 3.8rem);
+  margin-bottom: 1rem;
+}
+
+.vso-hero h1 span {
+  color: #6ec1ff;
+}
+
+.vso-hero p {
+  color: rgba(255, 255, 255, 0.85);
+  font-size: 1.1rem;
+}
+
+.vso-buttons {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.vso-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0.9rem 1.8rem;
+  border-radius: 999px;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.vso-btn.primary {
+  background: var(--brand-blue);
+  color: #fff;
+}
+
+.vso-btn.secondary {
+  border: 2px solid #fff;
+  color: #fff;
+  background: transparent;
+}
+
+.vso-section {
+  padding: 4rem 1.5rem;
+}
+
+.vso-section.center {
+  text-align: center;
+}
+
+.vso-section.alt {
+  background: #fff;
+}
+
+.vso-section.alt .vso-btn.secondary,
+.vso-section .vso-btn.secondary {
+  border-color: var(--brand-blue);
+  color: var(--brand-blue);
+}
+
+.vso-kicker {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: var(--brand-blue);
+  font-weight: 600;
+  font-size: 0.95rem;
+  margin-bottom: 0.75rem;
+}
+
+.vso-section h2 {
+  margin: 0 0 1rem;
+  font-size: clamp(2rem, 4vw, 2.6rem);
+}
+
+.vso-section h2 span {
+  color: var(--brand-blue);
+}
+
+.vso-lead {
+  color: var(--text-muted);
+  max-width: 760px;
+  margin: 0 auto 2rem;
+}
+
+.vso-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1.5rem;
+}
+
+.vso-card {
+  background: var(--card-bg);
+  border-radius: 20px;
+  padding: 2rem;
+  box-shadow: 0 20px 50px rgba(15, 23, 42, 0.08);
+}
+
+.vso-card h3 {
+  margin-top: 0.5rem;
+  font-size: 1.4rem;
+}
+
+.vso-sponsors {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.vso-sponsors img {
+  max-height: 70px;
+}
+
+.vso-contact-grid {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+}
+
+.vso-inline-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.vso-inline-list li {
+  margin-bottom: 0.5rem;
+}
+
+.vso-footer-note {
+  text-align: center;
+  padding: 2rem 1.5rem 4rem;
+  color: var(--text-muted);
+}
+
+@media (max-width: 768px) {
+  .vso-nav-links {
+    justify-content: center;
+  }
+
+  .vso-nav-inner {
+    flex-direction: column;
+  }
+}

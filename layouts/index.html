@@ -1,0 +1,158 @@
+{{ define "main" }}
+<header class="vso-nav" id="site-nav">
+  <div class="vso-nav-inner ph3 ph5-ns">
+    <nav class="vso-nav-links">
+      <a href="#om">Om oss</a>
+      <a href="#trening">Trening</a>
+      <a href="#turorientering">Turorientering</a>
+      <a href="#medlemskap">Medlemskap</a>
+      <a href="#stott">Støtt oss</a>
+      <a href="#kontakt">Kontakt</a>
+    </nav>
+  </div>
+</header>
+
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const nav = document.getElementById("site-nav");
+    const setNavState = () => {
+      if (window.scrollY > 40) {
+        nav.classList.add("scrolled");
+      } else {
+        nav.classList.remove("scrolled");
+      }
+    };
+    setNavState();
+    window.addEventListener("scroll", setNavState);
+  });
+</script>
+
+<section id="top" class="vso-hero" style="background-image: url('{{ "images/hero.jpg" | relURL }}');">
+  <div class="vso-hero-content">
+    <img class="vso-hero-logo" src="{{ "images/logo.png" | relURL }}" alt="Orienteringslaget Vallset/Stange logo">
+    <h1>Orienteringslaget <span>Vallset/Stange</span></h1>
+    <p>Orienteringslaget Vallset/Stange er en lokal orienteringsklubb i Stange. Vi tilbyr aktiviteter for både barn, ungdom og voksne gjennom året.</p>
+    <div class="vso-buttons">
+      <a class="vso-btn primary" href="https://www.facebook.com/groups/585257878237772/" target="_blank" rel="noopener">Følg oss på Facebook</a>
+      <a class="vso-btn secondary" href="https://eventor.orientering.no/Events" target="_blank" rel="noopener">Se terminliste</a>
+    </div>
+  </div>
+</section>
+
+<section id="om" class="vso-section">
+  <div class="ph3 ph5-ns">
+    <div class="vso-kicker">Om klubben</div>
+    <h2>En stolt historie i <span>Stange</span></h2>
+    <p class="vso-lead">Orienteringslaget Vallset/Stange ble til i 1989 gjennom sammenslåing av Vallset O-lag og Stange O-lag. Røttene våre går tilbake til 26. august 1945 da Romedal og Vallset orienteringslag ble stiftet. I dag er vi rundt 180 medlemmer som liker kart, natur og fellesskap.</p>
+  </div>
+</section>
+
+<section id="trening" class="vso-section alt center">
+  <div class="ph3 ph5-ns">
+    <div class="vso-kicker">Trening & aktiviteter</div>
+    <h2>Bli med ut i <span>skogen</span></h2>
+    <p class="vso-lead">Vi arrangerer treninger og konkurranser gjennom hele sesongen. Følg med på Facebook og Eventor for oppdatert informasjon.</p>
+    <div class="vso-grid">
+      <div class="vso-card">
+        <div class="vso-pill green">🌲</div>
+        <h3>Ordinær trening</h3>
+        <p>Fellestreninger i sesong med varierte løyper for alle nivåer.</p>
+      </div>
+      <div class="vso-card">
+        <div class="vso-pill red">👥</div>
+        <h3>Rekruttering</h3>
+        <p>Barn og ungdom 8–16 år er ekstra velkomne til å prøve orientering.</p>
+      </div>
+      <div class="vso-card">
+        <div class="vso-pill">📅</div>
+        <h3>Konkurranser</h3>
+        <p>Delta på lokale og nasjonale løp gjennom Eventor.</p>
+      </div>
+    </div>
+    <div class="vso-buttons">
+      <a class="vso-btn primary" href="https://www.facebook.com/groups/585257878237772/" target="_blank" rel="noopener">Følg oss på Facebook</a>
+      <a class="vso-btn secondary" href="https://eventor.orientering.no/Events" target="_blank" rel="noopener">Se Eventor</a>
+    </div>
+  </div>
+</section>
+
+<section id="turorientering" class="vso-section">
+  <div class="ph3 ph5-ns vso-grid">
+    <div>
+      <div class="vso-kicker">Turorientering</div>
+      <h2>Opplev naturen i <span>eget tempo</span></h2>
+      <p class="vso-lead">Turorientering er et lavterskeltilbud for hele familien. Turene er gratis å laste ned gjennom turorientering.no.</p>
+      <a class="vso-btn secondary" href="http://turorientering.no/olvallsetstange/" target="_blank" rel="noopener">Gå til turorientering.no</a>
+    </div>
+    <div>
+      <img src="{{ "images/forest.jpg" | relURL }}" alt="Turorientering" style="width: 100%; border-radius: 20px;">
+    </div>
+  </div>
+</section>
+
+<section id="medlemskap" class="vso-section alt">
+  <div class="ph3 ph5-ns vso-grid">
+    <div class="vso-card">
+      <div class="vso-kicker">Medlemskap</div>
+      <h2>Bli en del av <span>fellesskapet</span></h2>
+      <p>Vallset/Stange Orienteringsklubb bruker Norges Idrettsforbund sitt medlemssystem. Klikk på lenken under for å melde inn deg eller ditt barn i klubben.</p>
+      <ul class="vso-inline-list">
+        <li>Barn/ungdom t.o.m. 17 år: 100 kr</li>
+        <li>Voksne fra 18 år: 250 kr</li>
+        <li>Familiemedlemskap: 500 kr</li>
+      </ul>
+      <a class="vso-btn primary" href="https://medlemskap.nif.no/21719" target="_blank" rel="noopener">Registrer deg som medlem</a>
+    </div>
+    <div class="vso-card">
+      <div class="vso-kicker">Grasrotandelen</div>
+      <h2>Støtt klubben</h2>
+      <p>Du kan bli grasrotgiver i alle Norsk Tippings kanaler eller ved å sende SMS: Grasrotandelen 990170894 til nummer 60000.</p>
+      <a class="vso-btn secondary" href="https://www.norsk-tipping.no/grasrotandelen/din-mottaker/990170894" target="_blank" rel="noopener">Støtt oss</a>
+      <a class="vso-btn secondary" href="https://www.norsk-tipping.no/grasrotandelen" target="_blank" rel="noopener">Les mer</a>
+    </div>
+  </div>
+</section>
+
+<section id="stott" class="vso-section center">
+  <div class="ph3 ph5-ns">
+    <div class="vso-kicker">Sponsorer</div>
+    <h2>Takk til våre <span>støttespillere</span></h2>
+    <div class="vso-sponsors">
+      <img src="{{ "images/sponsors/sport1-logo-butikk.jpeg" | relURL }}" alt="Sport1 logo">
+      <img src="{{ "images/sponsors/sport1-superstore.jpg" | relURL }}" alt="Sport1 Superstore logo">
+    </div>
+  </div>
+</section>
+
+<section id="kontakt" class="vso-section alt">
+  <div class="ph3 ph5-ns vso-contact-grid">
+    <div>
+      <div class="vso-kicker">Styret</div>
+      <h2>Kontakt styret</h2>
+      <ul class="vso-inline-list">
+        <li><strong>Styrets leder:</strong> Bodil Frydelund – <a href="mailto:bottolf@live.no">bottolf@live.no</a> – 94277491</li>
+        <li><strong>Nestleder:</strong> Petter Hallerby – <a href="mailto:petter.hallerby@gmail.com">petter.hallerby@gmail.com</a> – 98283232</li>
+        <li><strong>Sportslig leder:</strong> Arnstein Dale – <a href="mailto:arnstein.dale@norconsult.com">arnstein.dale@norconsult.com</a></li>
+        <li><strong>Kasserer:</strong> Reiulf Holm – <a href="mailto:reiulf.holm@triodata.no">reiulf.holm@triodata.no</a></li>
+        <li><strong>Sekretær:</strong> Annemieke Paulsen – <a href="mailto:annemieke.paulsen@live.no">annemieke.paulsen@live.no</a></li>
+        <li><strong>Oppmann:</strong> Knut Haug – <a href="mailto:knut.haug.ile@gmail.com">knut.haug.ile@gmail.com</a></li>
+      </ul>
+    </div>
+    <div>
+      <div class="vso-kicker">Kontakt</div>
+      <h2>Praktisk info</h2>
+      <ul class="vso-inline-list">
+        <li><strong>E-post:</strong> <a href="mailto:bottolf@live.no">bottolf@live.no</a></li>
+        <li><strong>Org.nr:</strong> 990 170 894</li>
+        <li><strong>Kontonr:</strong> 1815.22.07510</li>
+        <li><strong>Vipps:</strong> #520200</li>
+      </ul>
+      <p><strong>Postadresse</strong><br>c/o Bodil Frydenlund<br>Ekebergvegen 721<br>2337 Tangen</p>
+    </div>
+  </div>
+</section>
+
+<section class="vso-footer-note">
+  <p>For nyheter og løpende oppdateringer, følg oss på <a href="https://www.facebook.com/groups/585257878237772/" target="_blank" rel="noopener">Facebook</a>.</p>
+</section>
+{{ end }}
