@@ -1,4 +1,5 @@
-baseURL = 'https://phallerby.github.io/VallsetStange_OL/'
+baseURL = '/'
+relativeURLs = true
 languageCode = 'nb-no'
 title = 'Orienteringslaget Vallset/Stange'
 theme = 'ananke'
@@ -16,3 +17,8 @@ theme = 'ananke'
     networks = ['facebook']
   [params.ananke.social.facebook]
     profilelink = 'https://www.facebook.com/groups/585257878237772/'
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
