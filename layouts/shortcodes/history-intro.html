@@ -1,0 +1,9 @@
+<div class="vso-history-grid">
+  <div>
+    {{ .Inner | markdownify }}
+  </div>
+  <div>
+    {{ $img := .Get "image" | default "images/fusjon-logo.jpg" }}
+    <img src="{{ $img | relURL }}" alt="{{ .Get "alt" | default "Fusjonslogo for Vallset/Stange" }}" class="vso-history-image">
+  </div>
+</div>
