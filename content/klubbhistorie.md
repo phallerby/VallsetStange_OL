@@ -1,7 +1,7 @@
 ---
 title: "Om klubben"
 intro_title: "En stolt historie i <span>Stange</span>"
-intro_text: "O-laget Vallset/Stange ble dannet i 1989, men historien begynte allerede 26. august 1945. Gjennom sammenslåinger, nyetableringer og sterkt lokalt engasjement har orienteringen hatt en sentral plass i bygda i over 75 år.<p>I dag samler klubben rundt 100 medlemmer og bygger videre på en lang og stolt tradisjon."
+intro_text: "O-laget Vallset/Stange ble dannet i 1989, men historien begynte allerede 26. august 1945. Gjennom sammenslåinger, nyetableringer og sterkt lokalt engasjement har orienteringen hatt en sentral plass i bygda i over 75 år. I dag samler klubben rundt 100 medlemmer og bygger videre på en lang og stolt tradisjon."
 headless: true
 ---
 
