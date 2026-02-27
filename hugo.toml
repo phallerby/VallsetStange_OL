@@ -1,4 +1,4 @@
-baseURL = 'https://phallerby.github.io/VallsetStange_OL/'
+baseURL = 'https://vallset-stange.no/'
 languageCode = 'nb-no'
 title = 'Orienteringslaget Vallset/Stange'
 theme = 'ananke'
