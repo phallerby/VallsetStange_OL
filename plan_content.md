@@ -25,7 +25,21 @@
    - CTA‑knapp: “Bli medlem”
 
 2. **Om klubben**
-   - Kort presentasjon + historikk (kortversjon)
+   - Standardtekst ved innlasting:
+     "O-laget Vallset/Stange er en sammenslutning av tidligere Vallset O-lag og Stange O-lag. Lagene ble slått sammen i 1989. Opprinnelsen til lagene var Romedal og Vallset orienteringslag som ble stiftet den 26. august 1945. Navnet ble endret til Vallset O-lag i 1949.
+
+     Stange O-lag ble stiftet 31. mars 1951 og var i drift til og med 1957. I 1969 ble det opprettet ei o-gruppe innen Stange Sportsklubb som var i drift til og med 1972. Den 2. mai i 1973 ble Stange O-lag restiftet. Opprinnelsesdatoen den 26.08.45 betyr at laget er et av landets aller eldste orienteringslag og eldre enn Norges orienteringsforbund! Laget har i dag ca. 100 medlemmer"
+   - Knapp: "Les mer om klubbens historie"
+   - Utvidet seksjon (strukturert med mellomtitler):
+     - Historie (utvidet tekst fra dagens nettside)
+     - De første løpene
+     - O-idretten i bygda organiseres
+     - Arrangementer
+     - Resultater og prestasjoner
+     - Lagsformenn/lagsledere
+     - Tidligere lagsformenn/ledere (Vallset o-lag, Stange o-lag, O-laget Vallset/Stange)
+   - Bilde i historiedel: last ned og bruk lokalt bilde fra:
+     - https://azure.content.bloc.net/redactor/200000195/1840/2017/8/15/fusjon-logo.jpg
 
 3. **Aktiviteter**
    - Orientering, treninger, turorientering
