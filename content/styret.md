@@ -10,5 +10,5 @@ headless: true
   <li><strong>Sportslig leder:</strong> Arnstein Dale – <a href="mailto:arnstein.dale@norconsult.com">arnstein.dale@norconsult.com</a></li>
   <li><strong>Kasserer:</strong> Reiulf Holm – <a href="mailto:reiulf.holm@triodata.no">reiulf.holm@triodata.no</a></li>
   <li><strong>Sekretær:</strong> Annemieke Paulsen – <a href="mailto:annemieke.paulsen@live.no">annemieke.paulsen@live.no</a></li>
-  <li><strong>Oppmann:</strong> Knut Haug – <a href="mailto:knut.haug.ile@gmail.com">knut.haug.ile@gmail.com</a></li>
+  <li><strong>Oppmann:</strong> Tor Kristian Sørli – <a href="mailto:tor.kristian-sorli@byggmax.no">tor.kristian-sorli@byggmax.no</a></li>
 </ul>
